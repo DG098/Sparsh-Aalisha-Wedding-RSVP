@@ -165,7 +165,23 @@ alert("There was an error :(")
 });
 }
 </script>
+  <script>
+    $(document).ready(function(){
+        $("#myinput").on('keypress keyup', function(){
+
+            var max = parseInt($(this).attr('max'));
+            var min = parseInt($(this).attr('min'));
+            var val = $(this).val();
+
+            (val < 1) ? $(this).val(min) : $(this).val();
+            (val > 6) ? $(this).val(max) : $(this).val();
+
+        });
+    });
+</script>
 </head>
+  
+  
 <body>
 <div class="top">
   </div>
@@ -204,20 +220,7 @@ alert("There was an error :(")
 <h2> If Attending Fill the Details</h2>
 
 <input type="number" name="noofguests" placeholder="# of Guests" max="6" min="1" id="myinput"/>
-<script>
-    $(document).ready(function(){
-        $("#myinput").on('keypress keyup', function(){
 
-            var max = parseInt($(this).attr('max'));
-            var min = parseInt($(this).attr('min'));
-            var val = $(this).val();
-
-            (val < 1) ? $(this).val(min) : $(this).val();
-            (val > 6) ? $(this).val(max) : $(this).val();
-
-        });
-    });
-</script>
 
 <input name="city" placeholder="City of Residence"/>
 
