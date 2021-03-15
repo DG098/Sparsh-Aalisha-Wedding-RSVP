@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width,  
+                   initial-scale=1.0"> 
 <style>
+html{
 
+
+background-image: url('5.jpg');
+ background-repeat: no-repeat;
+ 
+  background-size: cover;
+
+}
 html, body {
-height: 100%;
-width: 100%;
+
 margin: 0;
 padding: 0;
-background-color:pink;
+
 
 
 
 font-family: 'Raleway';
 }
 .top {
-  background-color: #264356;
+  
   height: 200px;
   margin:0;
   padding:0;
-  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+
 }
 .theForm {
-  height: 2300px;
+  height: 2600px;
   width: 600px;
  
   margin: -110px auto;
   border-radius: 10px;
   color: #666;
   padding: 0px 0px;
+padding-bottom:100px;
   box-shadow: 2px 2px 2px  rgb(0, 0, 0, .25);
- background-color:white;
-   
+ background-image: url('7.jpg');
+ background-repeat: no-repeat;
+ 
+  background-size: cover;
 }
 .info {
   padding: 10px;
+   padding-top:30px;
 }
 .infoForm{
 padding:10px
@@ -79,7 +94,7 @@ button {
   font-weight: 600;
   padding: 15px 32px;
   width: 200px;
-  margin: 20px auto 0px auto;
+  margin: 20px;
  
 }
 
@@ -179,13 +194,925 @@ alert("There was an error :(")
         });
     });
 </script>
+  <script>
+function displayNo(){
+var sumitButton=document.getElementById("submitButton");
+        var myname = document.getElementById("myinput");
+		var city=document.getElementById("city");
+ var name1=document.getElementById("name1");
+   var age1=document.getElementById("age1");
+		var m1=document.getElementById("m1");
+    var name2=document.getElementById("name2");
+   var age2=document.getElementById("age2");
+		var m2=document.getElementById("m2");
+		var name3=document.getElementById("name3");
+		var age3=document.getElementById("age3");
+		var m3=document.getElementById("m3");
+		var name4=document.getElementById("name4");
+		var age4=document.getElementById("age4");
+		var m4=document.getElementById("m4");
+		var name5=document.getElementById("name5");
+		var age5=document.getElementById("age5");
+		var m5=document.getElementById("m5");
+		var name6=document.getElementById("name6");
+		var age6=document.getElementById("age6");
+		var m6=document.getElementById("m6");	
+
+myname.disabled=true;
+city.disabled=true;
+name1.style.display="none";
+		age1.style.display="none";
+		m1.style.display="none";
+ 
+    name2.style.display = "none";
+  
+  
+    name3.style.display = "none";
+  
+     
+    name4.style.display = "none";
+  
+     
+    name5.style.display = "none";
+  
+    
+    age2.style.display = "none";
+  
+     
+    age3.style.display = "none";
+  
+    
+    age4.style.display = "none";
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+     
+    m2.style.display = "none";
+  
+     
+    m3.style.display = "none";
+  
+     
+    m4.style.display = "none";
+  
+    
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    name6.style.display = "none";
+  
+  for(var i=0;i<=6;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "1100px";
+
+}
+   function myFunction() {
+ var x = document.getElementById("myinput").value;
+  if(x<1)
+  document.getElementById("myinput").value='';
+  else if(x>6)
+   document.getElementById("myinput").value='';
+   
+  
+	 var name1=document.getElementById("name1");
+   var age1=document.getElementById("age1");
+		var m1=document.getElementById("m1");
+    var name2=document.getElementById("name2");
+   var age2=document.getElementById("age2");
+		var m2=document.getElementById("m2");
+		var name3=document.getElementById("name3");
+		var age3=document.getElementById("age3");
+		var m3=document.getElementById("m3");
+		var name4=document.getElementById("name4");
+		var age4=document.getElementById("age4");
+		var m4=document.getElementById("m4");
+		var name5=document.getElementById("name5");
+		var age5=document.getElementById("age5");
+		var m5=document.getElementById("m5");
+		var name6=document.getElementById("name6");
+		var age6=document.getElementById("age6");
+		var m6=document.getElementById("m6");	
+   if(x==1)
+   {
+  
+		name1.style.display="block";
+		age1.style.display="block";
+		m1.style.display="block";
+ 
+    name2.style.display = "none";
+  
+  
+    name3.style.display = "none";
+  
+     
+    name4.style.display = "none";
+  
+     
+    name5.style.display = "none";
+  
+    
+    age2.style.display = "none";
+  
+     
+    age3.style.display = "none";
+  
+    
+    age4.style.display = "none";
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+     
+    m2.style.display = "none";
+  
+     
+    m3.style.display = "none";
+  
+     
+    m4.style.display = "none";
+  
+    
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    name6.style.display = "none";
+  
+  document.getElementsByTagName("h3")[0].style.display = "block";
+  document.getElementsByTagName("h3")[6].style.display = "block";
+  for(var i=1;i<=5;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "1400px";
+}
+else if(x==2)
+{
+	name1.style.display="block";
+		age1.style.display="block";
+		m1.style.display="block";
+ 
+    name2.style.display = "block";
+  age2.style.display = "block";
+  m2.style.display = "block";
+    name3.style.display = "none";
+  
+     
+    name4.style.display = "none";
+  
+     
+    name5.style.display = "none";
+  
+    
+     name6.style.display = "none";
+  
+     
+    age3.style.display = "none";
+  
+    
+    age4.style.display = "none";
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+     
+    
+  
+     
+    m3.style.display = "none";
+  
+     
+    m4.style.display = "none";
+  
+    
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    document.getElementsByTagName("h3")[0].style.display = "block";
+	 document.getElementsByTagName("h3")[1].style.display = "block";
+  document.getElementsByTagName("h3")[6].style.display = "block";
+  for(var i=2;i<=5;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "1650px";
+
+}
+else if(x==3)
+{
+
+name1.style.display="block";
+		age1.style.display="block";
+		m1.style.display="block";
+ 
+    name2.style.display = "block";
+  age2.style.display = "block";
+  m2.style.display = "block";
+  
+    name3.style.display = "block";
+   age3.style.display = "block";
+     m3.style.display = "block";
+	 
+    name4.style.display = "none";
+  
+     
+    name5.style.display = "none";
+  
+    
+     name6.style.display = "none";
+  
+     
+    
+  
+    
+    age4.style.display = "none";
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+     
+    
+  
+     
+    
+  
+     
+    m4.style.display = "none";
+  
+    
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    document.getElementsByTagName("h3")[0].style.display = "block";
+	 document.getElementsByTagName("h3")[1].style.display = "block";
+	 document.getElementsByTagName("h3")[2].style.display = "block";
+  document.getElementsByTagName("h3")[6].style.display = "block";
+  for(var i=3;i<=5;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "1900px";
+
+
+
+}
+else if(x==4)
+{
+name1.style.display="block";
+		age1.style.display="block";
+		m1.style.display="block";
+ 
+    name2.style.display = "block";
+  age2.style.display = "block";
+  m2.style.display = "block";
+  
+    name3.style.display = "block";
+   age3.style.display = "block";
+     m3.style.display = "block";
+	 
+    name4.style.display = "block";
+   age4.style.display = "block";
+      m4.style.display = "block";
+	  
+    name5.style.display = "none";
+  
+    
+     name6.style.display = "none";
+  
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+  
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    document.getElementsByTagName("h3")[0].style.display = "block";
+	 document.getElementsByTagName("h3")[1].style.display = "block";
+	 document.getElementsByTagName("h3")[2].style.display = "block";
+	  document.getElementsByTagName("h3")[3].style.display = "block";
+  document.getElementsByTagName("h3")[6].style.display = "block";
+  for(var i=4;i<=5;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "2100px";
+
+
+
+
+}
+else if(x==5)
+{
+name1.style.display="block";
+		age1.style.display="block";
+		m1.style.display="block";
+ 
+    name2.style.display = "block";
+  age2.style.display = "block";
+  m2.style.display = "block";
+  
+    name3.style.display = "block";
+   age3.style.display = "block";
+     m3.style.display = "block";
+	 
+    name4.style.display = "block";
+   age4.style.display = "block";
+      m4.style.display = "block";
+	  
+    name5.style.display = "block";
+   age5.style.display = "block";
+    m5.style.display = "block";
+	
+	
+     name6.style.display = "none";
+    age6.style.display = "none";
+    m6.style.display = "none";
+  
+     
+    document.getElementsByTagName("h3")[0].style.display = "block";
+	 document.getElementsByTagName("h3")[1].style.display = "block";
+	 document.getElementsByTagName("h3")[2].style.display = "block";
+	  document.getElementsByTagName("h3")[3].style.display = "block";
+	  document.getElementsByTagName("h3")[4].style.display = "block";
+  document.getElementsByTagName("h3")[6].style.display = "block";
+  for(var i=5;i<=5;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "2350px";
+}
+else if(x==6)
+{
+name1.style.display="block";
+		age1.style.display="block";
+		m1.style.display="block";
+ 
+    name2.style.display = "block";
+  age2.style.display = "block";
+  m2.style.display = "block";
+  
+    name3.style.display = "block";
+   age3.style.display = "block";
+     m3.style.display = "block";
+	 
+    name4.style.display = "block";
+   age4.style.display = "block";
+      m4.style.display = "block";
+	  
+    name5.style.display = "block";
+   age5.style.display = "block";
+    m5.style.display = "block";
+	
+	
+     name6.style.display = "block";
+    age6.style.display = "block";
+    m6.style.display = "block";
+  
+     
+    document.getElementsByTagName("h3")[0].style.display = "block";
+	 document.getElementsByTagName("h3")[1].style.display = "block";
+	 document.getElementsByTagName("h3")[2].style.display = "block";
+	  document.getElementsByTagName("h3")[3].style.display = "block";
+	  document.getElementsByTagName("h3")[4].style.display = "block";
+	  document.getElementsByTagName("h3")[5].style.display = "block";
+  document.getElementsByTagName("h3")[6].style.display = "block";
+  
+  
+  document.getElementById("main").style.height = "2600px";
+
+}
+else
+{
+var name1=document.getElementById("name1");
+   var age1=document.getElementById("age1");
+		var m1=document.getElementById("m1");
+    var name2=document.getElementById("name2");
+   var age2=document.getElementById("age2");
+		var m2=document.getElementById("m2");
+		var name3=document.getElementById("name3");
+		var age3=document.getElementById("age3");
+		var m3=document.getElementById("m3");
+		var name4=document.getElementById("name4");
+		var age4=document.getElementById("age4");
+		var m4=document.getElementById("m4");
+		var name5=document.getElementById("name5");
+		var age5=document.getElementById("age5");
+		var m5=document.getElementById("m5");
+		var name6=document.getElementById("name6");
+		var age6=document.getElementById("age6");
+		var m6=document.getElementById("m6");	
+
+
+name1.style.display="none";
+		age1.style.display="none";
+		m1.style.display="none";
+ 
+    name2.style.display = "none";
+  
+  
+    name3.style.display = "none";
+  
+     
+    name4.style.display = "none";
+  
+     
+    name5.style.display = "none";
+  
+    
+    age2.style.display = "none";
+  
+     
+    age3.style.display = "none";
+  
+    
+    age4.style.display = "none";
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+     
+    m2.style.display = "none";
+  
+     
+    m3.style.display = "none";
+  
+     
+    m4.style.display = "none";
+  
+    
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    name6.style.display = "none";
+  
+  for(var i=0;i<=6;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "1100px";
+
+
+}
+}
+</script>
+<script type="text/javascript">
+    function EnableDisableTextBox() {
+        var chkYes = document.getElementById("chkYes");
+        var myname = document.getElementById("myinput");
+		var city=document.getElementById("city");
+		var name1=document.getElementById("name1");
+		var age1=document.getElementById("age1");
+		var m1=document.getElementById("m1");
+		var name2=document.getElementById("name2");
+		var age2=document.getElementById("age2");
+		var m2=document.getElementById("m2");
+		var name3=document.getElementById("name3");
+		var age3=document.getElementById("age3");
+		var m3=document.getElementById("m3");
+		var name4=document.getElementById("name4");
+		var age4=document.getElementById("age4");
+		var m4=document.getElementById("m4");
+		var name5=document.getElementById("name5");
+		var age5=document.getElementById("age5");
+		var m5=document.getElementById("m5");
+		var name6=document.getElementById("name6");
+		var age6=document.getElementById("age6");
+		var m6=document.getElementById("m6");
+		
+        myname.disabled = chkYes.checked ? false : true;
+		if(!chkYes.checked)
+		{
+		var name1=document.getElementById("name1");
+   var age1=document.getElementById("age1");
+		var m1=document.getElementById("m1");
+    var name2=document.getElementById("name2");
+   var age2=document.getElementById("age2");
+		var m2=document.getElementById("m2");
+		var name3=document.getElementById("name3");
+		var age3=document.getElementById("age3");
+		var m3=document.getElementById("m3");
+		var name4=document.getElementById("name4");
+		var age4=document.getElementById("age4");
+		var m4=document.getElementById("m4");
+		var name5=document.getElementById("name5");
+		var age5=document.getElementById("age5");
+		var m5=document.getElementById("m5");
+		var name6=document.getElementById("name6");
+		var age6=document.getElementById("age6");
+		var m6=document.getElementById("m6");	
+
+
+name1.style.display="none";
+		age1.style.display="none";
+		m1.style.display="none";
+ 
+    name2.style.display = "none";
+  
+  
+    name3.style.display = "none";
+  
+     
+    name4.style.display = "none";
+  
+     
+    name5.style.display = "none";
+  
+    
+    age2.style.display = "none";
+  
+     
+    age3.style.display = "none";
+  
+    
+    age4.style.display = "none";
+  
+    age5.style.display = "none";
+  
+     
+    age6.style.display = "none";
+  
+     
+    m2.style.display = "none";
+  
+     
+    m3.style.display = "none";
+  
+     
+    m4.style.display = "none";
+  
+    
+    m5.style.display = "none";
+  
+    
+    m6.style.display = "none";
+  
+     
+    name6.style.display = "none";
+  
+  for(var i=0;i<=6;i++)
+  document.getElementsByTagName("h3")[i].style.display = "none";
+  document.getElementById("main").style.height = "1100px";
+  }
+		if(myname.disabled)
+		{
+		myname.value='';
+		}
+        else if (!myname.disabled) {
+            myname.focus();
+        }
+		city.disabled = chkYes.checked ? false : true;
+		if(city.disabled)
+		{
+		city.value='';
+		}
+		name1.disabled = chkYes.checked ? false : true;
+		if(name1.disabled)
+		{
+		name1.value='';
+		}
+		name2.disabled = chkYes.checked ? false : true;
+		if(name2.disabled)
+		{
+		name2.value='';
+		}
+		name3.disabled = chkYes.checked ? false : true;
+		if(name3.disabled)
+		{
+		name3.value='';
+		}
+		name4.disabled = chkYes.checked ? false : true;
+		if(name4.disabled)
+		{
+		name4.value='';
+		}
+		name5.disabled = chkYes.checked ? false : true;
+		if(name5.disabled)
+		{
+		name5.value='';
+		}
+		name6.disabled = chkYes.checked ? false : true;
+		if(name6.disabled)
+		{
+		name6.value='';
+		}
+		age1.disabled = chkYes.checked ? false : true;
+		if(age1.disabled)
+		{
+		age1.value='';
+		}
+		age2.disabled = chkYes.checked ? false : true;
+		if(age2.disabled)
+		{
+		age2.value='';
+		}
+		age3.disabled = chkYes.checked ? false : true;
+		if(myname.disabled)
+		{
+		myname.value='';
+		}
+		age3.disabled = chkYes.checked ? false : true;
+		if(age3.disabled)
+		{
+		age3.value='';
+		}
+		age4.disabled = chkYes.checked ? false : true;
+		if(age4.disabled)
+		{
+		age4.value='';
+		}
+		age5.disabled = chkYes.checked ? false : true;
+		if(age5.disabled)
+		{
+		age5.value='';
+		}
+		age6.disabled = chkYes.checked ? false : true;
+		if(age6.disabled)
+		{
+		age6.value='';
+		}
+		m1.disabled = chkYes.checked ? false : true;
+		if(m1.disabled)
+		{
+		m1.value='';
+		}
+		m2.disabled = chkYes.checked ? false : true;
+		if(m2.disabled)
+		{
+		m2.value='';
+		}
+		m3.disabled = chkYes.checked ? false : true;
+		if(m3.disabled)
+		{
+		m3.value='';
+		}
+		m4.disabled = chkYes.checked ? false : true;
+		if(m4.disabled)
+		{
+		m4.value='';
+		}
+		m5.disabled = chkYes.checked ? false : true;
+		if(m5.disabled)
+		{
+		m5.value='';
+		}
+		m6.disabled = chkYes.checked ? false : true;
+    if(m6.disabled)
+		{
+		m6.value='';
+		}
+	}
+	
+</script>
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+	function validAge1(){
+	 var error = document.getElementById("error") 
+	 var age1=document.getElementById("age1");
+	if(age1.value>100 || age1.value<1)
+	{
+	
+	 error.textContent = "Please enter a valid number" 
+            error.style.color = "red" 
+			age1.value='';
+			return false;
+        } else { 
+            error.textContent = "" 
+	return true;
+	}
+	
+	}
+	function validAge2(){
+	 var error2 = document.getElementById("error2") 
+	 var age2=document.getElementById("age2");
+	if(age2.value>100 || age2.value<1)
+	{
+	
+	 error2.textContent = "Please enter a valid number" 
+            error2.style.color = "red" 
+			age2.value='';
+			return false;
+        } else { 
+            error2.textContent = "" 
+	return true;
+	}
+	
+	}
+	function validAge3(){
+	 var error3 = document.getElementById("error3") 
+	 var age3=document.getElementById("age3");
+	if(age3.value>100 || age3.value<1)
+	{
+	
+	 error3.textContent = "Please enter a valid number" 
+            error3.style.color = "red" 
+			age3.value='';
+			return false;
+        } else { 
+            error3.textContent = "" 
+	return true;
+	}
+	
+	}
+	function validAge4(){
+	 var error4 = document.getElementById("error4") 
+	 var age4=document.getElementById("age4");
+	if(age4.value>100 || age4.value<1)
+	{
+	
+	 error4.textContent = "Please enter a valid number" 
+            error4.style.color = "red" 
+			age4.value='';
+			return false;
+        } else { 
+            error4.textContent = "" 
+	return true;
+	}
+	
+	}
+	function validAge5(){
+	 var error5 = document.getElementById("error5") 
+	 var age5=document.getElementById("age5");
+	if(age5.value>100 || age5.value<1)
+	{
+	
+	 error5.textContent = "Please enter a valid number" 
+            error5.style.color = "red" 
+			age5.value='';
+			return false;
+        } else { 
+            error5.textContent = "" 
+	return true;
+	}
+	
+	}
+	function validAge6(){
+	 var error6 = document.getElementById("error6") 
+	 var age6=document.getElementById("age6");
+	if(age6.value>100 || age6.value<1)
+	{
+	
+	 error6.textContent = "Please enter a valid number" 
+            error6.style.color = "red" 
+			age6.value='';
+			return false;
+        } else { 
+            error6.textContent = "" 
+	return true;
+	}
+	
+	}
+	function validMob1(){
+	var errorm1 = document.getElementById("errorm1") 
+	 var m1=document.getElementById("m1");
+	if(m1.value<999999999)
+	{
+	 errorm1.textContent = "Please enter a valid number" 
+            errorm1.style.color = "red" 
+			
+			return false;
+
+	} 
+	else {
+		errorm1.textContent = "" 
+	return true;
+	}
+	}
+	function validMob2(){
+	var errorm2 = document.getElementById("errorm2") 
+	 var m2=document.getElementById("m2");
+	if(m2.value<999999999)
+	{
+	 errorm2.textContent = "Please enter a valid number" 
+            errorm2.style.color = "red" 
+			
+			return false;
+
+	} 
+	else {
+		errorm2.textContent = "" 
+	return true;
+	}
+	}
+	function validMob3(){
+	var errorm1 = document.getElementById("errorm1") 
+	 var m3=document.getElementById("m3");
+	if(m3.value<999999999)
+	{
+	 errorm3.textContent = "Please enter a valid number" 
+            errorm3.style.color = "red" 
+			
+			return false;
+
+	} 
+	else {
+		errorm3.textContent = "" 
+	return true;
+	}
+	}
+	function validMob4(){
+	var errorm4 = document.getElementById("errorm4") 
+	 var m4=document.getElementById("m4");
+	if(m4.value<999999999)
+	{
+	 errorm4.textContent = "Please enter a valid number" 
+            errorm4.style.color = "red" 
+			
+			return false;
+
+	} 
+	else {
+		errorm4.textContent = "" 
+	return true;
+	}
+	}
+	function validMob5(){
+	var errorm5 = document.getElementById("errorm5") 
+	 var m5=document.getElementById("m5");
+	if(m5.value<999999999)
+	{
+	 errorm5.textContent = "Please enter a valid number" 
+            errorm5.style.color = "red" 
+			
+			return false;
+
+	} 
+	else {
+		errorm5.textContent = "" 
+	return true;
+	}
+	}
+	function validMob6(){
+	var errorm6 = document.getElementById("errorm6") 
+	 var m6=document.getElementById("m6");
+	if(m6.value<999999999)
+	{
+	 errorm6.textContent = "Please enter a valid number" 
+            errorm6.style.color = "red" 
+			
+			return false;
+
+	} 
+	else {
+		errorm6.textContent = "" 
+	return true;
+	}
+	}
+</script> 
+ <script language="Javascript" type="text/javascript">
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else
+                    return false;
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        }
+
+    </script>
 </head>
   
   
-<body>
+<body onload="displayNo()">
 <div class="top">
   </div>
-  <div class="theForm">
+  <div class="theForm" id="main">
   <div class ="info">
     <h1>RSVP</h1>
     <h2>for the wedding of</h2>
@@ -205,85 +1132,100 @@ alert("There was an error :(")
 </div>
 
 <div class="infoForm">
-<form id="myForm">
+<form id="myForm" name="form1" onsubmit="return validateForm()" method="post">
+<h2> Name of Personal filling this RSVP</h2>
+<input name="Name" placeholder="Name" id="name" onkeypress="return onlyAlphabets(event,this);"/>
+<br>
 <h2> Attendance</h2>
 <div>
 <label class="container">Will Attend
-<input type="radio" name="radioAttend" value="Will Attend" ></input>
+<input type="radio" name="radioAttend" value="Will Attend" id="chkYes" onclick="EnableDisableTextBox()"></input>
 <span class="radio_class"></span>
 </label>
 <label class="container">Will Not Attend
-<input type="radio" name="radioAttend" value="will not Attend"></input>
+<input type="radio" name="radioAttend" value="will not Attend" id="chkNo" onclick="EnableDisableTextBox()"></input>
 <span class="radio_class"></span>
 </label>
 </div>
+<br>
 <h2> If Attending Fill the Details</h2>
 
-<input type="number" name="noofguests" placeholder="# of Guests" max="6" min="1" id="myinput"/>
+
+<input type="number" name="noofguests" placeholder="# of Guests" max="6" min="1" id="myinput" oninput="myFunction()">
 
 
-<input name="city" placeholder="City of Residence"/>
+<input name="city" placeholder="City of Residence" id="city" onkeypress="return onlyAlphabets(event,this);"/>
 
-<h3>1st Guest Details</h3>
-<input name="Name1" placeholder="Name"/>
-
-
-<input name="age1" placeholder="Age"/>
+<h3 id="guest1">1st Guest Details</h3>
+<input name="Name1" placeholder="Name" id="name1" onkeypress="return onlyAlphabets(event,this);"/>
 
 
-<input name="number1" placeholder="Mobile Number"/>
+<input name="age1" placeholder="Age" id="age1" style="margin-bottom:0;"onkeypress="return onlyNumberKey(event)" maxlength="3" oninput=" return validAge1()"/>
+  <span id="error" style="margin-left:62px;"></span> 
 
-<h3>2nd Guest Details</h3>
-<input name="Name2" placeholder="Name"/>
+<input name="number1" placeholder="Mobile Number"   style="margin-bottom:0;" id="m1" maxlength="10" onkeypress="return onlyNumberKey(event)" oninput="return validMob1()" />
+  <span id="errorm1" style="margin-left:62px;"></span> 
 
-
-<input name="age2" placeholder="Age" />
-
-
-<input name="number2" placeholder="Mobile Number"/>
-<h3>3rd Guest Details</h3>
-
-<input name="Name3" placeholder="Name"/>
+<h3 id="guest2">2nd Guest Details</h3>
+<input name="Name2" placeholder="Name" id="name2" onkeypress="return onlyAlphabets(event,this);"/>
 
 
-<input name="age3" placeholder="Age"/>
+<input name="age2" placeholder="Age" id="age2" style="margin-bottom:0;"onkeypress="return onlyNumberKey(event)" maxlength="3" oninput=" return validAge2()" />
+ <span id="error2" style="margin-left:62px;"></span> 
+
+<input name="number2" placeholder="Mobile Number" id="m2"  style="margin-bottom:0;" maxlength="10" onkeypress="return onlyNumberKey(event)" oninput="return validMob2()" />
+ <span id="errorm2" style="margin-left:62px;"></span> 
+<h3 id="guest3">3rd Guest Details</h3>
+
+<input name="Name3" placeholder="Name" id="name3" onkeypress="return onlyAlphabets(event,this);"/>
 
 
-<input name="number3" placeholder="Mobile Number" />
-
-<h3>4th Guest Details</h3>
-<input name="Name4" placeholder="Name" />
+<input name="age3" placeholder="Age" id="age3" style="margin-bottom:0;" onkeypress="return onlyNumberKey(event)" maxlength="3" oninput="return validAge3()" />
+ <span id="error3" style="margin-left:62px;"></span> 
 
 
-<input name="age4" placeholder="Age" />
+<input name="number3" placeholder="Mobile Number" id="m3"  style="margin-bottom:0;" onkeypress="return onlyNumberKey(event)" oninput="return validMob3()" />
+ <span id="errorm3" style="margin-left:62px;"></span> 
+<h3 id="guest4">4th Guest Details</h3>
+<input name="Name4" placeholder="Name" id="name4" onkeypress="return onlyAlphabets(event,this);" />
 
 
-<input name="number4" placeholder="Mobile Number" />
-
-<h3>5th Guest Details</h3>
-<input name="Name5" placeholder="Name" />
+<input name="age4" placeholder="Age" id="age4" style="margin-bottom:0;"onkeypress="return onlyNumberKey(event)" maxlength="3" oninput=" return validAge4()" />
+ <span id="error4" style="margin-left:62px;"></span>
 
 
-<input name="age5" placeholder="Age" />
+<input name="number4" placeholder="Mobile Number" id="m4"  style="margin-bottom:0;" onkeypress="return onlyNumberKey(event)" oninput="return validMob4()" />
+ <span id="errorm4" style="margin-left:62px;"></span> 
+<h3 id="guest5">5th Guest Details</h3>
+<input name="Name5" placeholder="Name" id="name5" onkeypress="return onlyAlphabets(event,this);"/>
 
 
-<input name="number5" placeholder="Mobile Number"/>
-<h3>6th Guest Details</h3>
-<input name="Name6" placeholder="Name" />
+<input name="age5" placeholder="Age"  id="age5" style="margin-bottom:0;"onkeypress="return onlyNumberKey(event)" maxlength="3" oninput=" return validAge5()" />
+ <span id="error5" style="margin-left:62px;"></span> 
 
 
-<input name="age6" placeholder="Age" />
+<input name="number5" placeholder="Mobile Number" id="m5"  style="margin-bottom:0;" onkeypress="return onlyNumberKey(event)" oninput="return validMob5()" />
+ <span id="errorm5" style="margin-left:62px;"></span> 
+<h3 id="guest6">6th Guest Details</h3>
+<input name="Name6" placeholder="Name" id="name6" onkeypress="return onlyAlphabets(event,this);" />
 
 
-<input name="number6" placeholder="Mobile Number"/>
+<input name="age6" placeholder="Age" id="age6" style="margin-bottom:0;"onkeypress="return onlyNumberKey(event)" maxlength="3" oninput=" return validAge6()" />
+ <span id="error6" style="margin-left:62px;"></span> 
+
+
+<input name="number6" placeholder="Mobile Number" id="m6"  style="margin-bottom:0;" onkeypress="return onlyNumberKey(event)" oninput="return validMob6()" />
+ <span id="errorm6" style="margin-left:62px;"></span> 
+  
 
 </form>
-<div style="text-align:center; padding:10px">
-   <h3>Please send Aadhar card photo of every guest attending the function on Whatsapp (Neeraj Goel- 9358188881)</h3>
+<div style="text-align:center; padding:10px; margin-top:40px">
+   <h3 style="margin-botton:20px;">Please send Aadhar card photo of every guest attending the function on Whatsapp (Neeraj Goel- 9358188881)</h3>
    
    <br>
-   
-<button onclick='SubForm()'>Submit</button>
+    
+	
+   <button id="submitButton" onclick='SubForm()'>Submit</button>	
 </div>
 </div>
 </body>
